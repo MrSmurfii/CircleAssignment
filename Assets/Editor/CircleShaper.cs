@@ -15,7 +15,7 @@ public class CircleShaper : Editor
     }
 
     private void OnSceneGUI() {
-        GameObject circleTarget = selectedDrawer.target;
+        GameObject circleTarget = selectedDrawer.gameObject;
         if (!target)
             return;
 

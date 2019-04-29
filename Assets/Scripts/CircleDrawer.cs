@@ -5,7 +5,7 @@ using UnityEngine.Assertions;
 public class CircleDrawer : MonoBehaviour
 {
 
-    public GameObject target;
+   // public GameObject target;
     public float radius = 10f;
     public int sides = 3;
     Vector3 sidePosition;
@@ -16,6 +16,8 @@ public class CircleDrawer : MonoBehaviour
     private void Awake() {
         lineRenderer = GetComponent<LineRenderer>();
         Assert.IsNotNull(lineRenderer, "You didn't add a LineRenderer, moron!");
+        //if (!target)
+        //    target = gameObject;
     }
 
     public void DrawCircle() {
